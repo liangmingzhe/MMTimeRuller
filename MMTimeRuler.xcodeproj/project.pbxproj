@@ -16,6 +16,7 @@
 		EE3D5FFD25D8E34500D8114E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D5FFC25D8E34500D8114E /* main.m */; };
 		EE3D600725D8E34500D8114E /* MMTimeRulerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D600625D8E34500D8114E /* MMTimeRulerTests.m */; };
 		EE3D601225D8E34600D8114E /* MMTimeRulerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D601125D8E34600D8114E /* MMTimeRulerUITests.m */; };
+		EE3D603425D8EE9300D8114E /* MMTimeRuller.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D603325D8EE9300D8114E /* MMTimeRuller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		EE3D600D25D8E34600D8114E /* MMTimeRulerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMTimeRulerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3D601125D8E34600D8114E /* MMTimeRulerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMTimeRulerUITests.m; sourceTree = "<group>"; };
 		EE3D601325D8E34600D8114E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE3D603225D8EE9300D8114E /* MMTimeRuller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMTimeRuller.h; sourceTree = "<group>"; };
+		EE3D603325D8EE9300D8114E /* MMTimeRuller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMTimeRuller.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,7 @@
 				EE3D5FEE25D8E34400D8114E /* SceneDelegate.m */,
 				EE3D5FF025D8E34400D8114E /* ViewController.h */,
 				EE3D5FF125D8E34400D8114E /* ViewController.m */,
+				EE3D602B25D8E35C00D8114E /* MMTimeRuller */,
 				EE3D5FF325D8E34400D8114E /* Main.storyboard */,
 				EE3D5FF625D8E34500D8114E /* Assets.xcassets */,
 				EE3D5FF825D8E34500D8114E /* LaunchScreen.storyboard */,
@@ -135,6 +139,15 @@
 				EE3D601325D8E34600D8114E /* Info.plist */,
 			);
 			path = MMTimeRulerUITests;
+			sourceTree = "<group>";
+		};
+		EE3D602B25D8E35C00D8114E /* MMTimeRuller */ = {
+			isa = PBXGroup;
+			children = (
+				EE3D603225D8EE9300D8114E /* MMTimeRuller.h */,
+				EE3D603325D8EE9300D8114E /* MMTimeRuller.m */,
+			);
+			path = MMTimeRuller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +282,7 @@
 				EE3D5FF225D8E34400D8114E /* ViewController.m in Sources */,
 				EE3D5FEC25D8E34400D8114E /* AppDelegate.m in Sources */,
 				EE3D5FFD25D8E34500D8114E /* main.m in Sources */,
+				EE3D603425D8EE9300D8114E /* MMTimeRuller.m in Sources */,
 				EE3D5FEF25D8E34400D8114E /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -428,7 +442,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
