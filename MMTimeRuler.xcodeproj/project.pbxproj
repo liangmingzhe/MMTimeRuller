@@ -17,6 +17,11 @@
 		EE3D600725D8E34500D8114E /* MMTimeRulerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D600625D8E34500D8114E /* MMTimeRulerTests.m */; };
 		EE3D601225D8E34600D8114E /* MMTimeRulerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D601125D8E34600D8114E /* MMTimeRulerUITests.m */; };
 		EE3D603425D8EE9300D8114E /* MMTimeRuller.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D603325D8EE9300D8114E /* MMTimeRuller.m */; };
+		EE3D603E25D8FB3D00D8114E /* MMTimeRullerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D603D25D8FB3D00D8114E /* MMTimeRullerCollectionView.m */; };
+		EE3D604525D8FB9E00D8114E /* MMRullerCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D604425D8FB9E00D8114E /* MMRullerCellModel.m */; };
+		EE3D604D25D8FBCB00D8114E /* MMRullerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D604B25D8FBCB00D8114E /* MMRullerCell.m */; };
+		EE3D604E25D8FBCB00D8114E /* MMRullerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3D604C25D8FBCB00D8114E /* MMRullerCell.xib */; };
+		EE6642B325D906E9003DB01E /* MMTimeRullerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6642B225D906E9003DB01E /* MMTimeRullerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,15 @@
 		EE3D601325D8E34600D8114E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE3D603225D8EE9300D8114E /* MMTimeRuller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMTimeRuller.h; sourceTree = "<group>"; };
 		EE3D603325D8EE9300D8114E /* MMTimeRuller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMTimeRuller.m; sourceTree = "<group>"; };
+		EE3D603C25D8FB3D00D8114E /* MMTimeRullerCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMTimeRullerCollectionView.h; sourceTree = "<group>"; };
+		EE3D603D25D8FB3D00D8114E /* MMTimeRullerCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMTimeRullerCollectionView.m; sourceTree = "<group>"; };
+		EE3D604325D8FB9E00D8114E /* MMRullerCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMRullerCellModel.h; sourceTree = "<group>"; };
+		EE3D604425D8FB9E00D8114E /* MMRullerCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMRullerCellModel.m; sourceTree = "<group>"; };
+		EE3D604A25D8FBCB00D8114E /* MMRullerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMRullerCell.h; sourceTree = "<group>"; };
+		EE3D604B25D8FBCB00D8114E /* MMRullerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMRullerCell.m; sourceTree = "<group>"; };
+		EE3D604C25D8FBCB00D8114E /* MMRullerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MMRullerCell.xib; sourceTree = "<group>"; };
+		EE6642B125D906E9003DB01E /* MMTimeRullerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMTimeRullerView.h; sourceTree = "<group>"; };
+		EE6642B225D906E9003DB01E /* MMTimeRullerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMTimeRullerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +127,7 @@
 				EE3D5FEE25D8E34400D8114E /* SceneDelegate.m */,
 				EE3D5FF025D8E34400D8114E /* ViewController.h */,
 				EE3D5FF125D8E34400D8114E /* ViewController.m */,
+				EE3D603B25D8FAF200D8114E /* MMTimeRullerCollectionView */,
 				EE3D602B25D8E35C00D8114E /* MMTimeRuller */,
 				EE3D5FF325D8E34400D8114E /* Main.storyboard */,
 				EE3D5FF625D8E34500D8114E /* Assets.xcassets */,
@@ -148,6 +163,38 @@
 				EE3D603325D8EE9300D8114E /* MMTimeRuller.m */,
 			);
 			path = MMTimeRuller;
+			sourceTree = "<group>";
+		};
+		EE3D603B25D8FAF200D8114E /* MMTimeRullerCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				EE3D604225D8FB7500D8114E /* View */,
+				EE3D604925D8FBA300D8114E /* Model */,
+			);
+			path = MMTimeRullerCollectionView;
+			sourceTree = "<group>";
+		};
+		EE3D604225D8FB7500D8114E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE6642B125D906E9003DB01E /* MMTimeRullerView.h */,
+				EE6642B225D906E9003DB01E /* MMTimeRullerView.m */,
+				EE3D603C25D8FB3D00D8114E /* MMTimeRullerCollectionView.h */,
+				EE3D603D25D8FB3D00D8114E /* MMTimeRullerCollectionView.m */,
+				EE3D604A25D8FBCB00D8114E /* MMRullerCell.h */,
+				EE3D604B25D8FBCB00D8114E /* MMRullerCell.m */,
+				EE3D604C25D8FBCB00D8114E /* MMRullerCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE3D604925D8FBA300D8114E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE3D604325D8FB9E00D8114E /* MMRullerCellModel.h */,
+				EE3D604425D8FB9E00D8114E /* MMRullerCellModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE3D5FFA25D8E34500D8114E /* LaunchScreen.storyboard in Resources */,
+				EE3D604E25D8FBCB00D8114E /* MMRullerCell.xib in Resources */,
 				EE3D5FF725D8E34500D8114E /* Assets.xcassets in Resources */,
 				EE3D5FF525D8E34400D8114E /* Main.storyboard in Resources */,
 			);
@@ -279,8 +327,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE3D604525D8FB9E00D8114E /* MMRullerCellModel.m in Sources */,
+				EE3D604D25D8FBCB00D8114E /* MMRullerCell.m in Sources */,
+				EE6642B325D906E9003DB01E /* MMTimeRullerView.m in Sources */,
 				EE3D5FF225D8E34400D8114E /* ViewController.m in Sources */,
 				EE3D5FEC25D8E34400D8114E /* AppDelegate.m in Sources */,
+				EE3D603E25D8FB3D00D8114E /* MMTimeRullerCollectionView.m in Sources */,
 				EE3D5FFD25D8E34500D8114E /* main.m in Sources */,
 				EE3D603425D8EE9300D8114E /* MMTimeRuller.m in Sources */,
 				EE3D5FEF25D8E34400D8114E /* SceneDelegate.m in Sources */,
