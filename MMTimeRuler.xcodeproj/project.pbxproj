@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5935A7225DAB5BD0031ABE1 /* GlobalParams.m in Sources */ = {isa = PBXBuildFile; fileRef = A5935A7125DAB5BD0031ABE1 /* GlobalParams.m */; };
+		A5935A8325DC0DB80031ABE1 /* MMRullerHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5935A8225DC0DB80031ABE1 /* MMRullerHeadView.m */; };
+		A5F280D125DC33C9000A9F6E /* MMRullerFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F280D025DC33C9000A9F6E /* MMRullerFooterView.m */; };
 		EE3D5FEC25D8E34400D8114E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D5FEB25D8E34400D8114E /* AppDelegate.m */; };
 		EE3D5FEF25D8E34400D8114E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D5FEE25D8E34400D8114E /* SceneDelegate.m */; };
 		EE3D5FF225D8E34400D8114E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3D5FF125D8E34400D8114E /* ViewController.m */; };
@@ -42,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A5935A7025DAB5BD0031ABE1 /* GlobalParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalParams.h; sourceTree = "<group>"; };
+		A5935A7125DAB5BD0031ABE1 /* GlobalParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalParams.m; sourceTree = "<group>"; };
+		A5935A8125DC0DB80031ABE1 /* MMRullerHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMRullerHeadView.h; sourceTree = "<group>"; };
+		A5935A8225DC0DB80031ABE1 /* MMRullerHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMRullerHeadView.m; sourceTree = "<group>"; };
+		A5F280CF25DC33C9000A9F6E /* MMRullerFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMRullerFooterView.h; sourceTree = "<group>"; };
+		A5F280D025DC33C9000A9F6E /* MMRullerFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMRullerFooterView.m; sourceTree = "<group>"; };
 		EE3D5FE725D8E34400D8114E /* MMTimeRuler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMTimeRuler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3D5FEA25D8E34400D8114E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EE3D5FEB25D8E34400D8114E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,6 +107,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5935A6F25DAB5A40031ABE1 /* GlobalParams */ = {
+			isa = PBXGroup;
+			children = (
+				A5935A7025DAB5BD0031ABE1 /* GlobalParams.h */,
+				A5935A7125DAB5BD0031ABE1 /* GlobalParams.m */,
+			);
+			path = GlobalParams;
+			sourceTree = "<group>";
+		};
 		EE3D5FDE25D8E34400D8114E = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +139,7 @@
 		EE3D5FE925D8E34400D8114E /* MMTimeRuler */ = {
 			isa = PBXGroup;
 			children = (
+				A5935A6F25DAB5A40031ABE1 /* GlobalParams */,
 				EE3D5FEA25D8E34400D8114E /* AppDelegate.h */,
 				EE3D5FEB25D8E34400D8114E /* AppDelegate.m */,
 				EE3D5FED25D8E34400D8114E /* SceneDelegate.h */,
@@ -184,6 +203,10 @@
 				EE3D604A25D8FBCB00D8114E /* MMRullerCell.h */,
 				EE3D604B25D8FBCB00D8114E /* MMRullerCell.m */,
 				EE3D604C25D8FBCB00D8114E /* MMRullerCell.xib */,
+				A5935A8125DC0DB80031ABE1 /* MMRullerHeadView.h */,
+				A5935A8225DC0DB80031ABE1 /* MMRullerHeadView.m */,
+				A5F280CF25DC33C9000A9F6E /* MMRullerFooterView.h */,
+				A5F280D025DC33C9000A9F6E /* MMRullerFooterView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -327,6 +350,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5935A8325DC0DB80031ABE1 /* MMRullerHeadView.m in Sources */,
+				A5F280D125DC33C9000A9F6E /* MMRullerFooterView.m in Sources */,
+				A5935A7225DAB5BD0031ABE1 /* GlobalParams.m in Sources */,
 				EE3D604525D8FB9E00D8114E /* MMRullerCellModel.m in Sources */,
 				EE3D604D25D8FBCB00D8114E /* MMRullerCell.m in Sources */,
 				EE6642B325D906E9003DB01E /* MMTimeRullerView.m in Sources */,

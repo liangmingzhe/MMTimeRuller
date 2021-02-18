@@ -17,15 +17,32 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FH1-6k-LuH">
+                        <rect key="frame" x="0.0" y="17.5" width="50" height="15"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="DZu-aq-3ki"/>
+                        </constraints>
+                    </view>
+                </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
-            <color key="backgroundColor" systemColor="systemBlueColor"/>
-            <point key="canvasLocation" x="-319" y="-1"/>
+            <constraints>
+                <constraint firstItem="FH1-6k-LuH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0SE-It-YiH"/>
+                <constraint firstItem="FH1-6k-LuH" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="2wI-Sb-TZK"/>
+                <constraint firstAttribute="trailing" secondItem="FH1-6k-LuH" secondAttribute="trailing" id="WQQ-CI-eL3"/>
+                <constraint firstItem="FH1-6k-LuH" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="fZb-gn-SsD"/>
+            </constraints>
+            <connections>
+                <outlet property="itemView" destination="FH1-6k-LuH" id="ghC-3g-U1A"/>
+            </connections>
+            <point key="canvasLocation" x="-417.39130434782612" y="-3.3482142857142856"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

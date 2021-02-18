@@ -6,8 +6,7 @@
 //
 
 #import "MMTimeRuller.h"
-#define ColorFromRGB(rgbValue,a) ([UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:(a)])
-
+#import "GlobalParams.h"
 @interface MMTimeRuller() {
     CGContextRef ctx;
     UIColor *fillColor;
@@ -34,8 +33,8 @@
     CGContextSetLineWidth(ctx, 1);//线的宽度
     CGContextSetLineJoin(ctx, kCGLineJoinRound);
    
-    lineColor = ColorFromRGB(0x666666,1);
-    fillColor = ColorFromRGB(0x666666,1);
+    lineColor = [GlobalParams colorFromRGB:0x666666 alpha:1];;
+    fillColor = [GlobalParams colorFromRGB:0x666666 alpha:1];;
     CGContextSetStrokeColorWithColor(ctx, lineColor.CGColor);//线框颜色
     CGContextSetFillColorWithColor(ctx, fillColor.CGColor);//填充颜色
     CGContextAddRoundRect(ctx,rect,kCGPathFill,0);
